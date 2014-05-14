@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2331B541923D47200129146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B531923D47200129146 /* Foundation.framework */; };
+		F2331B561923D47200129146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B551923D47200129146 /* CoreGraphics.framework */; };
+		F2331B581923D47200129146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B571923D47200129146 /* UIKit.framework */; };
+		F2331B5E1923D47200129146 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2331B5C1923D47200129146 /* InfoPlist.strings */; };
+		F2331B601923D47200129146 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B5F1923D47200129146 /* main.m */; };
+		F2331B641923D47200129146 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B631923D47200129146 /* MTAppDelegate.m */; };
+		F2331B671923D47200129146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2331B651923D47200129146 /* Main.storyboard */; };
+		F2331B6A1923D47200129146 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B691923D47200129146 /* MTViewController.m */; };
+		F2331B6C1923D47200129146 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2331B6B1923D47200129146 /* Images.xcassets */; };
+		F2331B731923D47200129146 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B721923D47200129146 /* XCTest.framework */; };
+		F2331B741923D47200129146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B531923D47200129146 /* Foundation.framework */; };
+		F2331B751923D47200129146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B571923D47200129146 /* UIKit.framework */; };
+		F2331B7D1923D47200129146 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2331B7B1923D47200129146 /* InfoPlist.strings */; };
+		F2331B7F1923D47200129146 /* Assignment_ExtClassFuncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B7E1923D47200129146 /* Assignment_ExtClassFuncTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2331B761923D47200129146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2331B481923D47200129146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2331B4F1923D47200129146;
+			remoteInfo = "Assignment ExtClassFunc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2331B501923D47200129146 /* Assignment ExtClassFunc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment ExtClassFunc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2331B531923D47200129146 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2331B551923D47200129146 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F2331B571923D47200129146 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2331B5B1923D47200129146 /* Assignment ExtClassFunc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment ExtClassFunc-Info.plist"; sourceTree = "<group>"; };
+		F2331B5D1923D47200129146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2331B5F1923D47200129146 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2331B611923D47200129146 /* Assignment ExtClassFunc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment ExtClassFunc-Prefix.pch"; sourceTree = "<group>"; };
+		F2331B621923D47200129146 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
+		F2331B631923D47200129146 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
+		F2331B661923D47200129146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2331B681923D47200129146 /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
+		F2331B691923D47200129146 /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
+		F2331B6B1923D47200129146 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2331B711923D47200129146 /* Assignment ExtClassFuncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment ExtClassFuncTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2331B721923D47200129146 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F2331B7A1923D47200129146 /* Assignment ExtClassFuncTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment ExtClassFuncTests-Info.plist"; sourceTree = "<group>"; };
+		F2331B7C1923D47200129146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2331B7E1923D47200129146 /* Assignment_ExtClassFuncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_ExtClassFuncTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2331B4D1923D47200129146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2331B561923D47200129146 /* CoreGraphics.framework in Frameworks */,
+				F2331B581923D47200129146 /* UIKit.framework in Frameworks */,
+				F2331B541923D47200129146 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2331B6E1923D47200129146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2331B731923D47200129146 /* XCTest.framework in Frameworks */,
+				F2331B751923D47200129146 /* UIKit.framework in Frameworks */,
+				F2331B741923D47200129146 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2331B471923D47200129146 = {
+			isa = PBXGroup;
+			children = (
+				F2331B591923D47200129146 /* Assignment ExtClassFunc */,
+				F2331B781923D47200129146 /* Assignment ExtClassFuncTests */,
+				F2331B521923D47200129146 /* Frameworks */,
+				F2331B511923D47200129146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2331B511923D47200129146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B501923D47200129146 /* Assignment ExtClassFunc.app */,
+				F2331B711923D47200129146 /* Assignment ExtClassFuncTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2331B521923D47200129146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B531923D47200129146 /* Foundation.framework */,
+				F2331B551923D47200129146 /* CoreGraphics.framework */,
+				F2331B571923D47200129146 /* UIKit.framework */,
+				F2331B721923D47200129146 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2331B591923D47200129146 /* Assignment ExtClassFunc */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B621923D47200129146 /* MTAppDelegate.h */,
+				F2331B631923D47200129146 /* MTAppDelegate.m */,
+				F2331B651923D47200129146 /* Main.storyboard */,
+				F2331B681923D47200129146 /* MTViewController.h */,
+				F2331B691923D47200129146 /* MTViewController.m */,
+				F2331B6B1923D47200129146 /* Images.xcassets */,
+				F2331B5A1923D47200129146 /* Supporting Files */,
+			);
+			path = "Assignment ExtClassFunc";
+			sourceTree = "<group>";
+		};
+		F2331B5A1923D47200129146 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B5B1923D47200129146 /* Assignment ExtClassFunc-Info.plist */,
+				F2331B5C1923D47200129146 /* InfoPlist.strings */,
+				F2331B5F1923D47200129146 /* main.m */,
+				F2331B611923D47200129146 /* Assignment ExtClassFunc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2331B781923D47200129146 /* Assignment ExtClassFuncTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B7E1923D47200129146 /* Assignment_ExtClassFuncTests.m */,
+				F2331B791923D47200129146 /* Supporting Files */,
+			);
+			path = "Assignment ExtClassFuncTests";
+			sourceTree = "<group>";
+		};
+		F2331B791923D47200129146 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B7A1923D47200129146 /* Assignment ExtClassFuncTests-Info.plist */,
+				F2331B7B1923D47200129146 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2331B4F1923D47200129146 /* Assignment ExtClassFunc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2331B821923D47200129146 /* Build configuration list for PBXNativeTarget "Assignment ExtClassFunc" */;
+			buildPhases = (
+				F2331B4C1923D47200129146 /* Sources */,
+				F2331B4D1923D47200129146 /* Frameworks */,
+				F2331B4E1923D47200129146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment ExtClassFunc";
+			productName = "Assignment ExtClassFunc";
+			productReference = F2331B501923D47200129146 /* Assignment ExtClassFunc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2331B701923D47200129146 /* Assignment ExtClassFuncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2331B851923D47200129146 /* Build configuration list for PBXNativeTarget "Assignment ExtClassFuncTests" */;
+			buildPhases = (
+				F2331B6D1923D47200129146 /* Sources */,
+				F2331B6E1923D47200129146 /* Frameworks */,
+				F2331B6F1923D47200129146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2331B771923D47200129146 /* PBXTargetDependency */,
+			);
+			name = "Assignment ExtClassFuncTests";
+			productName = "Assignment ExtClassFuncTests";
+			productReference = F2331B711923D47200129146 /* Assignment ExtClassFuncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2331B481923D47200129146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Michael Tirenin";
+				TargetAttributes = {
+					F2331B701923D47200129146 = {
+						TestTargetID = F2331B4F1923D47200129146;
+					};
+				};
+			};
+			buildConfigurationList = F2331B4B1923D47200129146 /* Build configuration list for PBXProject "Assignment ExtClassFunc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2331B471923D47200129146;
+			productRefGroup = F2331B511923D47200129146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2331B4F1923D47200129146 /* Assignment ExtClassFunc */,
+				F2331B701923D47200129146 /* Assignment ExtClassFuncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2331B4E1923D47200129146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2331B6C1923D47200129146 /* Images.xcassets in Resources */,
+				F2331B5E1923D47200129146 /* InfoPlist.strings in Resources */,
+				F2331B671923D47200129146 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2331B6F1923D47200129146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2331B7D1923D47200129146 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2331B4C1923D47200129146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2331B601923D47200129146 /* main.m in Sources */,
+				F2331B6A1923D47200129146 /* MTViewController.m in Sources */,
+				F2331B641923D47200129146 /* MTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2331B6D1923D47200129146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2331B7F1923D47200129146 /* Assignment_ExtClassFuncTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2331B771923D47200129146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2331B4F1923D47200129146 /* Assignment ExtClassFunc */;
+			targetProxy = F2331B761923D47200129146 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2331B5C1923D47200129146 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2331B5D1923D47200129146 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2331B651923D47200129146 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2331B661923D47200129146 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2331B7B1923D47200129146 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2331B7C1923D47200129146 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2331B801923D47200129146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2331B811923D47200129146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2331B831923D47200129146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment ExtClassFunc/Assignment ExtClassFunc-Prefix.pch";
+				INFOPLIST_FILE = "Assignment ExtClassFunc/Assignment ExtClassFunc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2331B841923D47200129146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment ExtClassFunc/Assignment ExtClassFunc-Prefix.pch";
+				INFOPLIST_FILE = "Assignment ExtClassFunc/Assignment ExtClassFunc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F2331B861923D47200129146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment ExtClassFunc.app/Assignment ExtClassFunc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment ExtClassFunc/Assignment ExtClassFunc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Assignment ExtClassFuncTests/Assignment ExtClassFuncTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F2331B871923D47200129146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment ExtClassFunc.app/Assignment ExtClassFunc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment ExtClassFunc/Assignment ExtClassFunc-Prefix.pch";
+				INFOPLIST_FILE = "Assignment ExtClassFuncTests/Assignment ExtClassFuncTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2331B4B1923D47200129146 /* Build configuration list for PBXProject "Assignment ExtClassFunc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2331B801923D47200129146 /* Debug */,
+				F2331B811923D47200129146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2331B821923D47200129146 /* Build configuration list for PBXNativeTarget "Assignment ExtClassFunc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2331B831923D47200129146 /* Debug */,
+				F2331B841923D47200129146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2331B851923D47200129146 /* Build configuration list for PBXNativeTarget "Assignment ExtClassFuncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2331B861923D47200129146 /* Debug */,
+				F2331B871923D47200129146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2331B481923D47200129146 /* Project object */;
+}
