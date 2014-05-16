@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F215C2CA192411F8005EBD78 /* MTCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F215C2C9192411F8005EBD78 /* MTCreatePostViewController.m */; };
+		F215C2CD19248331005EBD78 /* UIColor+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = F215C2CC19248331005EBD78 /* UIColor+Manage.m */; };
 		F2331B541923D47200129146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B531923D47200129146 /* Foundation.framework */; };
 		F2331B561923D47200129146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B551923D47200129146 /* CoreGraphics.framework */; };
 		F2331B581923D47200129146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B571923D47200129146 /* UIKit.framework */; };
@@ -14,13 +16,16 @@
 		F2331B601923D47200129146 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B5F1923D47200129146 /* main.m */; };
 		F2331B641923D47200129146 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B631923D47200129146 /* MTAppDelegate.m */; };
 		F2331B671923D47200129146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2331B651923D47200129146 /* Main.storyboard */; };
-		F2331B6A1923D47200129146 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B691923D47200129146 /* MTViewController.m */; };
 		F2331B6C1923D47200129146 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2331B6B1923D47200129146 /* Images.xcassets */; };
 		F2331B731923D47200129146 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B721923D47200129146 /* XCTest.framework */; };
 		F2331B741923D47200129146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B531923D47200129146 /* Foundation.framework */; };
 		F2331B751923D47200129146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2331B571923D47200129146 /* UIKit.framework */; };
 		F2331B7D1923D47200129146 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2331B7B1923D47200129146 /* InfoPlist.strings */; };
 		F2331B7F1923D47200129146 /* Assignment_ExtClassFuncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B7E1923D47200129146 /* Assignment_ExtClassFuncTests.m */; };
+		F2331B8D1923D51C00129146 /* MTPost.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B8C1923D51C00129146 /* MTPost.m */; };
+		F2331B901923D8C700129146 /* MTPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B8F1923D8C700129146 /* MTPostTableViewCell.m */; };
+		F2331B931923D97B00129146 /* MTPostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2331B921923D97B00129146 /* MTPostsTableViewController.m */; };
+		F235FF6B192557950030CF42 /* MTEditPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F235FF6A192557950030CF42 /* MTEditPostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F215C2C8192411F8005EBD78 /* MTCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCreatePostViewController.h; sourceTree = "<group>"; };
+		F215C2C9192411F8005EBD78 /* MTCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCreatePostViewController.m; sourceTree = "<group>"; };
+		F215C2CB19248331005EBD78 /* UIColor+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Manage.h"; sourceTree = "<group>"; };
+		F215C2CC19248331005EBD78 /* UIColor+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Manage.m"; sourceTree = "<group>"; };
 		F2331B501923D47200129146 /* Assignment ExtClassFunc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment ExtClassFunc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2331B531923D47200129146 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F2331B551923D47200129146 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +54,20 @@
 		F2331B621923D47200129146 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
 		F2331B631923D47200129146 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
 		F2331B661923D47200129146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2331B681923D47200129146 /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
-		F2331B691923D47200129146 /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
 		F2331B6B1923D47200129146 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2331B711923D47200129146 /* Assignment ExtClassFuncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment ExtClassFuncTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2331B721923D47200129146 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F2331B7A1923D47200129146 /* Assignment ExtClassFuncTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment ExtClassFuncTests-Info.plist"; sourceTree = "<group>"; };
 		F2331B7C1923D47200129146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2331B7E1923D47200129146 /* Assignment_ExtClassFuncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_ExtClassFuncTests.m; sourceTree = "<group>"; };
+		F2331B8B1923D51C00129146 /* MTPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPost.h; sourceTree = "<group>"; };
+		F2331B8C1923D51C00129146 /* MTPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPost.m; sourceTree = "<group>"; };
+		F2331B8E1923D8C700129146 /* MTPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPostTableViewCell.h; sourceTree = "<group>"; };
+		F2331B8F1923D8C700129146 /* MTPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPostTableViewCell.m; sourceTree = "<group>"; };
+		F2331B911923D97B00129146 /* MTPostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPostsTableViewController.h; sourceTree = "<group>"; };
+		F2331B921923D97B00129146 /* MTPostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPostsTableViewController.m; sourceTree = "<group>"; };
+		F235FF69192557950030CF42 /* MTEditPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTEditPostViewController.h; sourceTree = "<group>"; };
+		F235FF6A192557950030CF42 /* MTEditPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTEditPostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +127,13 @@
 		F2331B591923D47200129146 /* Assignment ExtClassFunc */ = {
 			isa = PBXGroup;
 			children = (
-				F2331B621923D47200129146 /* MTAppDelegate.h */,
-				F2331B631923D47200129146 /* MTAppDelegate.m */,
-				F2331B651923D47200129146 /* Main.storyboard */,
-				F2331B681923D47200129146 /* MTViewController.h */,
-				F2331B691923D47200129146 /* MTViewController.m */,
+				F2331B881923D49700129146 /* Models */,
+				F2331B891923D4A500129146 /* Views */,
+				F2331B8A1923D4AC00129146 /* Controllers */,
 				F2331B6B1923D47200129146 /* Images.xcassets */,
 				F2331B5A1923D47200129146 /* Supporting Files */,
+				F215C2CB19248331005EBD78 /* UIColor+Manage.h */,
+				F215C2CC19248331005EBD78 /* UIColor+Manage.m */,
 			);
 			path = "Assignment ExtClassFunc";
 			sourceTree = "<group>";
@@ -126,6 +141,8 @@
 		F2331B5A1923D47200129146 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F2331B621923D47200129146 /* MTAppDelegate.h */,
+				F2331B631923D47200129146 /* MTAppDelegate.m */,
 				F2331B5B1923D47200129146 /* Assignment ExtClassFunc-Info.plist */,
 				F2331B5C1923D47200129146 /* InfoPlist.strings */,
 				F2331B5F1923D47200129146 /* main.m */,
@@ -150,6 +167,38 @@
 				F2331B7B1923D47200129146 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2331B881923D49700129146 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B8B1923D51C00129146 /* MTPost.h */,
+				F2331B8C1923D51C00129146 /* MTPost.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F2331B891923D4A500129146 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B651923D47200129146 /* Main.storyboard */,
+				F2331B8E1923D8C700129146 /* MTPostTableViewCell.h */,
+				F2331B8F1923D8C700129146 /* MTPostTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F2331B8A1923D4AC00129146 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2331B911923D97B00129146 /* MTPostsTableViewController.h */,
+				F2331B921923D97B00129146 /* MTPostsTableViewController.m */,
+				F215C2C8192411F8005EBD78 /* MTCreatePostViewController.h */,
+				F215C2C9192411F8005EBD78 /* MTCreatePostViewController.m */,
+				F235FF69192557950030CF42 /* MTEditPostViewController.h */,
+				F235FF6A192557950030CF42 /* MTEditPostViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +300,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2331B601923D47200129146 /* main.m in Sources */,
-				F2331B6A1923D47200129146 /* MTViewController.m in Sources */,
+				F2331B901923D8C700129146 /* MTPostTableViewCell.m in Sources */,
+				F235FF6B192557950030CF42 /* MTEditPostViewController.m in Sources */,
+				F2331B8D1923D51C00129146 /* MTPost.m in Sources */,
+				F215C2CD19248331005EBD78 /* UIColor+Manage.m in Sources */,
+				F2331B931923D97B00129146 /* MTPostsTableViewController.m in Sources */,
+				F215C2CA192411F8005EBD78 /* MTCreatePostViewController.m in Sources */,
 				F2331B641923D47200129146 /* MTAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +511,7 @@
 				F2331B841923D47200129146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2331B851923D47200129146 /* Build configuration list for PBXNativeTarget "Assignment ExtClassFuncTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +520,7 @@
 				F2331B871923D47200129146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
