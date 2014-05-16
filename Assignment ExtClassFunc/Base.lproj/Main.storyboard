@@ -52,7 +52,7 @@
                                     <outlet property="timeStampLabel" destination="BWS-Aa-n6H" id="QbH-p4-Cuz"/>
                                     <outlet property="titleLabel" destination="jfF-Gw-z9c" id="Ik9-aD-2Tc"/>
                                     <outlet property="userNameLabel" destination="BoX-ZS-zU5" id="Lo7-xU-AH3"/>
-                                    <segue destination="Hzg-if-h1A" kind="push" id="WzI-Fp-ycG"/>
+                                    <segue destination="Hzg-if-h1A" kind="push" identifier="EditSegue" id="WzI-Fp-ycG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,7 +64,7 @@
                     <navigationItem key="navigationItem" title="Blog" id="WV9-4N-lWB">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hSw-7n-tEd">
                             <connections>
-                                <segue destination="ZtA-lj-umO" kind="push" id="dAy-dy-rDI"/>
+                                <segue destination="ZtA-lj-umO" kind="modal" identifier="PublishSegue" id="dAy-dy-rDI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -113,7 +113,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="XRy-dn-Ca9">
                             <connections>
                                 <action selector="saveEditedPost:" destination="Hzg-if-h1A" id="8aK-5I-s5X"/>
-                                <segue destination="vXZ-lx-hvc" kind="push" identifier="EditSegue" id="Xfs-jr-XAg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -167,7 +166,6 @@
                                 </state>
                                 <connections>
                                     <action selector="publishNewPost:" destination="ZtA-lj-umO" eventType="touchUpInside" id="w7r-oI-j1i"/>
-                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="PublishSegue" id="Pga-gH-3V1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -208,7 +206,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="urr-XZ-Sn2"/>
-    </inferredMetricsTieBreakers>
 </document>

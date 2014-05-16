@@ -32,7 +32,7 @@
     _editTitleTextField.text = _post.title;
     _editContentTextField.text = _post.content;
     
-    NSLog(@"%@, %@, %@", _editUserNameTextField.text, _editTitleTextField.text, _editContentTextField.text);
+//    NSLog(@"%@, %@, %@", _editUserNameTextField.text, _editTitleTextField.text, _editContentTextField.text);
     
 }
 

@@ -58,31 +58,31 @@ static NSString * const MTPostCellIdentifier = @"PostCell";
     MTPost *post1 = [[MTPost alloc] init];
     post1.userName = @"Mike Tirenin";
     post1.title = @"Title of First Post";
-    post1.content = @"Lorem ipsum dolor sit amet, ut pular vel mattis, ad nec velit etiam felis volutpat, magna orci, tellus aliquet in sed aliquam massa sodales. Vestibum sodales, vel maecenas et quasi nec.";
+    post1.content = @"Lorem ipsum dolor sit amet, conse ur adipiscing elit. Duis mollis erat ut nunc ultrices dictum. Sed mauris quis augue scelerisque pharetra. Nullam arcu ante, aliquam luctus.";
     post1.timeStamp = [NSDate date];
     
     MTPost *post2 = [[MTPost alloc] init];
     post2.userName = @"Mike Tirenin";
     post2.title = @"Title of Second Post";
-    post2.content = @"Lorem ipsum dolor sit amet, ut pular vel mattis, ad nec velit etiam felis volutpat, magna orci, tellus aliquet in sed aliquam massa sodales. Vestibum sodales, vel maecenas et quasi nec.";
+    post2.content = @"Lorem ipsum elit. Fusce vitae digni ossim nisi, nec fermentum nunc. Nunc a hendrerit magna. Suspen dis se dui neque, posuere ut porta phare tra, varius ac urna. :)";
     post2.timeStamp = [NSDate date];
     
     MTPost *post3 = [[MTPost alloc] init];
     post3.userName = @"Mike Tirenin";
     post3.title = @"Title of Third Post";
-    post3.content = @"Lorem ipsum dolor sit amet, ut pular vel mattis, ad nec velit etiam felis volutpat, magna orci, tellus aliquet in sed aliquam massa sodales. Vestibum sodales, vel maecenas et quasi nec.";
+    post3.content = @"Lorem ipsum dolor sit amet, adip soit elit. Proin vitae rhoncus mase. In tu aliquet nec ligula id euismod. Vivamus nisl massa, luctus at urna vitae corfus.";
     post3.timeStamp = [NSDate date];
     
     MTPost *post4 = [[MTPost alloc] init];
     post4.userName = @"Mike Tirenin";
     post4.title = @"Title of Fourth Post";
-    post4.content = @"Lorem ipsum dolor sit amet, ut pular vel mattis, ad nec velit etiam felis volutpat, magna orci, tellus aliquet in sed aliquam massa sodales. Vestibum sodales, vel maecenas et quasi nec.";
+    post4.content = @"Lorem ipsum dolor sit amet, con sec tetur adipiscing elit. Donec ligula quam, pharetra id fringilla non, elementum in augue. In non mi vel quam facilisis. Ha, ha!";
     post4.timeStamp = [NSDate date];
     
     MTPost *post5 = [[MTPost alloc] init];
     post5.userName = @"Mike Tirenin";
     post5.title = @"Title of Fifth Post";
-    post5.content = @"Lorem ipsum dolor sit amet, ut pular vel mattis, ad nec velit etiam felis volutpat, magna orci, tellus aliquet in sed aliquam massa sodales. Vestibum sodales, vel maecenas et quasi nec.";
+    post5.content = @"Lorem ipsum dolor velit vitae luct us. Proin elit. Vivamus et sem mase. Fusce non sodales dolor. Sed elemen tum gravida sem, ac blandit massa bibendum.";
     post5.timeStamp = [NSDate date];
     
     MTPost *post6 = [[MTPost alloc] init];
@@ -203,43 +203,16 @@ static NSString * const MTPostCellIdentifier = @"PostCell";
     }   
 }
 
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
 // return from other VCs
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"EditSegue"]) {
         MTEditPostViewController *editPostVC = segue.destinationViewController;
-        NSInteger selectedRow = [[self.tableView indexPathForSelectedRow] row];
-        editPostVC.post = _posts[selectedRow];
+        editPostVC.editPostDelegate = self;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        MTPost *post = [self.posts objectAtIndex:indexPath.row];
+        editPostVC.post = post;
     }
     if ([segue.identifier isEqualToString:@"PublishSegue"]) {
         MTCreatePostViewController *createPostVC = segue.destinationViewController;
@@ -250,24 +223,19 @@ static NSString * const MTPostCellIdentifier = @"PostCell";
 //    NSLog(@"PFSegue posts is: %@", _posts);
 }
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-////    MTCreatePostViewController *editVC = [[PostEditViewController alloc] initWithNibName:@"PostEditViewController" bundle:nil];
-//    MTCreatePostViewController *createPostVC = [[MTCreatePostViewController alloc] init];
-//    createPostVC.createPostDelegate = self;
-//    createPostVC.post = _posts[indexPath.row];
-//    
-//    [self presentViewController:createPostVC animated:YES completion:^{
-//        
-//    }];
-//}
-
 - (void)addObject:(MTPost *)post
 {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+//    [self.navigationController popToRootViewControllerAnimated:YES];
     [_posts addObject:post];
     [self.tableView reloadData];
+    [self dismissViewControllerAnimated:YES completion:nil];
+
     NSLog(@"What?");
+}
+
+- (void)updateTable
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 // to add background color to cells
