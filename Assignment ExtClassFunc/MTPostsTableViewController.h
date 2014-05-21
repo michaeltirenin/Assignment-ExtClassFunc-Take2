@@ -12,6 +12,6 @@
 @interface MTPostsTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSMutableArray *posts;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+//@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

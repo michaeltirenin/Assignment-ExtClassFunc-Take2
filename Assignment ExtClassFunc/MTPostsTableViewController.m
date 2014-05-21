@@ -40,8 +40,8 @@ static NSString * const MTPostCellIdentifier = @"PostCell";
 {
     [super viewDidLoad];
     
-//    _posts = [[NSMutableArray alloc] init];
-//        
+    _posts = [[NSMutableArray alloc] init];
+    
 //    MTPost *post1 = [[MTPost alloc] initWithUserName:@"Mike Tirenin" title:@"Title of First Post" content:@"Lorem ipsum dolor sit amet, conse ur adipiscing elit. Duis mollis erat ut nunc ultrices dictum. Sed mauris quis augue scelerisque pharetra. Nullam arcu ante, aliquam luctus." date:[NSDate date]];
 //    MTPost *post2 = [[MTPost alloc] initWithUserName:@"Mike Tirenin" title:@"Title of Second Post" content:@"Lorem ipsum elit. Fusce vitae digni ossim nisi, nec fermentum nunc. Nunc a hendrerit magna. Suspen dis se dui neque, posuere ut porta phare tra, varius ac urna. :)" date:[NSDate date]];
 //    MTPost *post3 = [[MTPost alloc] initWithUserName:@"Mike Tirenin" title:@"Title of Third Post" content:@"Lorem ipsum dolor sit amet, adip soit elit. Proin vitae rhoncus mase. In tu aliquet nec ligula id euismod. Vivamus nisl massa, luctus at urna vitae corfus." date:[NSDate date]];
@@ -117,7 +117,7 @@ static NSString * const MTPostCellIdentifier = @"PostCell";
     
     _posts = [NSMutableArray arrayWithObjects:post1, post2, post3, post4, post5, post6, post7, post8, post9, post10, nil];
 
-    NSLog(@"%@, %@, %@, %@", post1.userName, post1.title, post1.content, post1.timeStamp);
+//    NSLog(@"%@, %@, %@, %@", post1.userName, post1.title, post1.content, post1.timeStamp);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -230,12 +230,12 @@ static NSString * const MTPostCellIdentifier = @"PostCell";
     [self.tableView reloadData];
     [self dismissViewControllerAnimated:YES completion:nil];
 
-    NSLog(@"What?");
+//    NSLog(@"What?");
 }
 
 - (void)updateTable
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.tableView reloadData];
 }
 
 // to add background color to cells

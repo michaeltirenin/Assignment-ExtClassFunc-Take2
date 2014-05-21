@@ -29,4 +29,6 @@
 
 - (IBAction)saveEditedPost:(id)sender;
 
+- (IBAction)cancelEditPost:(UIBarButtonItem *)sender;
+
 @end

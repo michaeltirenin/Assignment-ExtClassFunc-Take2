@@ -25,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *contentTextField;
 
-- (IBAction)publishNewPost:(id)sender;
+- (IBAction)publishNewPost:(UIBarButtonItem *)sender;
+
+- (IBAction)cancelNewPost:(UIBarButtonItem *)sender;
 
 @end

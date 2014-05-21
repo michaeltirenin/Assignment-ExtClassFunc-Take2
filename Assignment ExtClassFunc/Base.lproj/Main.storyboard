@@ -110,6 +110,11 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Post" id="nMW-VY-p4v">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Udz-4w-zaL">
+                            <connections>
+                                <action selector="cancelEditPost:" destination="Hzg-if-h1A" id="oRI-pL-CkQ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="XRy-dn-Ca9">
                             <connections>
                                 <action selector="saveEditedPost:" destination="Hzg-if-h1A" id="8aK-5I-s5X"/>
@@ -168,6 +173,19 @@
                                     <action selector="publishNewPost:" destination="ZtA-lj-umO" eventType="touchUpInside" id="w7r-oI-j1i"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fw9-hU-mLv">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Create New Post" id="VB7-H5-8gR">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pjZ-x4-0rZ">
+                                            <connections>
+                                                <action selector="cancelNewPost:" destination="ZtA-lj-umO" id="ZfN-kZ-XUu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

@@ -42,8 +42,15 @@
     _post.title = _editTitleTextField.text;
     _post.content = _editContentTextField.text;
     
-    NSLog(@"%@, %@, %@", _post.userName, _post.title, _post.content);
+//    NSLog(@"%@, %@, %@", _post.userName, _post.title, _post.content);
     
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+    [self.editPostDelegate updateTable];
+}
+
+- (IBAction)cancelEditPost:(UIBarButtonItem *)sender
+{
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

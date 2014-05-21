@@ -60,7 +60,7 @@
 }
 */
 
-- (IBAction)publishNewPost:(id)sender
+- (IBAction)publishNewPost:(UIBarButtonItem *)sender
 {
 //    MTPost *newPost = [[MTPost alloc] initWithUserName:_userNameTextField.text title:_titleTextField.text content:_contentTextField.text date:[NSDate date]];
 
@@ -70,13 +70,18 @@
     post.content = _contentTextField.text;
     post.timeStamp = [NSDate date];
     
-    NSLog(@"%@ = %@, %@ = %@, %@ = %@, %@ = %@", _userNameTextField.text, post.userName, _titleTextField.text, post.title, _contentTextField.text, post.content, [NSDate date], post.timeStamp);
+//    NSLog(@"%@ = %@, %@ = %@, %@ = %@, %@ = %@", _userNameTextField.text, post.userName, _titleTextField.text, post.title, _contentTextField.text, post.content, [NSDate date], post.timeStamp);
     
     [self.createPostDelegate addObject:post];
     
-    NSLog(@"Self is %@", self.createPostDelegate);
-    NSLog(@"newPost is %@", post);
+//    NSLog(@"Self is %@", self.createPostDelegate);
+//    NSLog(@"newPost is %@", post);
 
+}
+
+- (IBAction)cancelNewPost:(UIBarButtonItem *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
